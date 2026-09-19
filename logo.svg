@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 210" role="img" aria-label="La Brocante de Nadine">
+  <style>
+    .wm{font-family:'Fraunces',Georgia,'Times New Roman',serif}
+  </style>
+  <!-- sprig mark (nod to her couronnes séchées) -->
+  <g transform="translate(150,10)" fill="none" stroke="#bd6046" stroke-width="2.4" stroke-linecap="round">
+    <path d="M20 74 C 19 62 19 50 20 38 C 20.5 28 21 20 20 10"/>
+    <path d="M19 54 L12 51"/><path d="M21 48 L28 44"/>
+    <path d="M19 42 L12.5 40"/><path d="M21 36 L27.5 32"/>
+    <path d="M19.5 30 L14 27"/><path d="M20.5 25 L26 21"/>
+  </g>
+  <g transform="translate(150,10)" fill="#bd6046">
+    <circle cx="11" cy="50.5" r="2.7"/><circle cx="29" cy="43.5" r="2.7"/>
+    <circle cx="11.5" cy="39.5" r="2.6"/><circle cx="28.5" cy="31.5" r="2.6"/>
+    <circle cx="13" cy="26.5" r="2.4"/><circle cx="27" cy="20.5" r="2.4"/>
+    <circle cx="20" cy="9" r="3"/>
+  </g>
+  <!-- wordmark -->
+  <text class="wm" x="170" y="128" text-anchor="middle" font-size="20" letter-spacing="6" fill="#6b5f50" style="text-transform:uppercase">LA&#160;BROCANTE&#160;DE</text>
+  <text class="wm" x="170" y="182" text-anchor="middle" font-size="62" font-style="italic" font-weight="600" fill="#2a2119">Nadine</text>
+</svg>
