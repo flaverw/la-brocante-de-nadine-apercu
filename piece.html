@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>La Brocante de Nadine — la pièce</title>
+<meta name="description" content="Une pièce unique de La Brocante de Nadine — seconde main, chinée avec soin, livrée partout en France.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 50'%3E%3Cg fill='none' stroke='%23bd6046' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M20 47 C19 37 19 26 20 15 C20.5 10 21 7 20 4'/%3E%3Cpath d='M19 30 L12 27'/%3E%3Cpath d='M21 24 L28 20'/%3E%3Cpath d='M19.5 18 L14 15'/%3E%3C/g%3E%3Cg fill='%23bd6046'%3E%3Ccircle cx='11' cy='26.5' r='3'/%3E%3Ccircle cx='29' cy='19.5' r='3'/%3E%3Ccircle cx='13' cy='14.5' r='2.7'/%3E%3Ccircle cx='20' cy='4' r='3.2'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Cormorant';font-weight:600;font-style:normal;font-display:swap;src:url('fonts/cormorant-600.woff2') format('woff2')}
+@font-face{font-family:'Cormorant';font-weight:700;font-style:normal;font-display:swap;src:url('fonts/cormorant-700.woff2') format('woff2')}
+@font-face{font-family:'Cormorant';font-weight:600;font-style:italic;font-display:swap;src:url('fonts/cormorant-it600.woff2') format('woff2')}
+@font-face{font-family:'EB Garamond';font-weight:400;font-style:normal;font-display:swap;src:url('fonts/ebgaramond-400.woff2') format('woff2')}
+@font-face{font-family:'EB Garamond';font-weight:400;font-style:italic;font-display:swap;src:url('fonts/ebgaramond-it400.woff2') format('woff2')}
+@font-face{font-family:'Marcellus';font-weight:400;font-style:normal;font-display:swap;src:url('fonts/marcellus.woff2') format('woff2')}
+@font-face{font-family:'Ephesis';font-weight:400;font-style:normal;font-display:swap;src:url('fonts/ephesis.woff2') format('woff2')}
+:root{--cream:#f5efe3;--cream2:#ecdfcb;--paper:#fbf7ef;--ink:#2c2318;--ink2:#6f6353;--muted:#9a8d79;--terra:#bd6046;--terra-deep:#9c4b34;--rose:#cf917c;--rose-bg:#f1ddd0;--rose-deep:#ab6450;--dark2:#30271a;--dink:#f2e9da;--dink2:#c8bba6;--line:#ddcdb6;--line-d:rgba(242,233,218,.16);--serif:'Cormorant',Georgia,serif;--book:'EB Garamond',Georgia,serif;--caps:'Marcellus',serif;--script:'Ephesis',cursive;--gut:clamp(16px,3.6vw,56px)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:var(--book);background:var(--cream);color:var(--ink);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}::selection{background:var(--terra);color:#fff}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+.wrap{width:min(1200px,100% - 2*var(--gut));margin-inline:auto}
+.grain{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:.04;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.btn{font-family:var(--caps);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:15px 26px;border-radius:3px;background:var(--terra);color:#fff;display:inline-flex;align-items:center;gap:9px;border:1px solid var(--terra);cursor:pointer;transition:.25s}
+.btn:hover{background:var(--terra-deep);border-color:var(--terra-deep);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn.ghost:hover{border-color:var(--terra);color:var(--terra-deep)}
+.brand{display:inline-flex;align-items:center;gap:11px}.brand .emb{width:40px;height:auto}.brand .nm{display:flex;flex-direction:column;line-height:1}
+.brand .nm small{font-family:var(--caps);font-size:8.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink2)}
+.brand .nm b{font-family:var(--script);font-size:29px;color:var(--ink);line-height:.8;margin-top:2px}
+.nav{position:sticky;top:0;z-index:70;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px var(--gut);background:rgba(245,239,227,.92);backdrop-filter:blur(11px);border-bottom:1px solid var(--line)}
+.nav .back{font-family:var(--caps);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.nav .back:hover{color:var(--terra-deep)}
+.crumb{font-family:var(--caps);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:26px 0 0}
+.crumb a:hover{color:var(--terra-deep)}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,68px);align-items:start;padding:22px 0 12px}
+.pgallery{position:relative}
+.pgallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;border:1px solid var(--line)}
+.pgallery .badge{position:absolute;top:15px;left:15px;background:var(--rose);color:#fff;font-family:var(--caps);font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:2px}
+.pinfo{position:sticky;top:92px}
+.pinfo .cat{font-family:var(--caps);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-deep)}
+.pinfo h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,4.6vw,62px);line-height:1;margin:6px 0 4px}
+.pinfo .price{font-family:var(--serif);font-weight:600;font-size:38px;color:var(--terra-deep)}
+.pinfo .meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.pinfo .meta span{font-family:var(--caps);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);border-radius:100px;padding:7px 14px}
+.pinfo .desc{font-family:var(--book);font-size:18px;color:var(--ink2);line-height:1.66;max-width:52ch}
+.pinfo .buy{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+.pinfo .buy .btn{width:100%;justify-content:center}
+.pinfo .buy .row{display:flex;gap:12px;width:100%}
+.reassure{margin-top:22px;border-top:1px solid var(--line);padding-top:18px;display:flex;flex-direction:column;gap:11px}
+.reassure div{display:flex;gap:12px;align-items:flex-start;font-family:var(--book);font-size:15px;color:var(--ink2)}
+.reassure b{color:var(--ink)}
+.reassure .i{color:var(--terra);flex:none;font-size:17px;line-height:1.3}
+.seller{margin-top:22px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:16px 18px;display:flex;align-items:center;gap:14px}
+.seller img{width:46px;height:auto;flex:none}
+.seller .t{font-family:var(--serif);font-weight:600;font-size:21px}
+.seller .s{font-family:var(--book);font-size:14px;color:var(--ink2)}
+@media(max-width:820px){.product{grid-template-columns:1fr;gap:22px}.pinfo{position:static}}
+
+.similar{padding:clamp(48px,7vh,90px) 0}
+.similar h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.4vw,44px);margin-bottom:26px}
+.similar h2 .it{font-style:italic;color:var(--terra)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.pc{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:5px;overflow:hidden;transition:transform .4s,box-shadow .4s;display:block}
+.pc:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(44,35,24,.13)}
+.pc .im{aspect-ratio:4/5;overflow:hidden}.pc .im img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.pc:hover .im img{transform:scale(1.05)}
+.pc .bd{padding:12px 13px 15px;text-align:center}.pc .nm{font-family:var(--serif);font-weight:600;font-size:20px}
+.pc .eur{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--terra-deep);margin-top:7px;display:block}
+.pc .fm{position:absolute;top:10px;left:10px;background:var(--rose);color:#fff;font-family:var(--caps);font-size:8px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:2px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:620px){.grid{grid-template-columns:1fr 1fr;gap:14px}}
+
+.foot{background:var(--dark2);color:var(--dink);border-top:1px solid var(--line-d);padding:40px var(--gut) 46px;text-align:center;font-family:var(--caps);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dink2)}
+.foot .brand{justify-content:center;margin-bottom:14px}.foot .brand .nm small{color:var(--dink2)}.foot .brand .nm b{color:var(--dink)}.foot .brand .emb{filter:brightness(1.12)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<nav class="nav">
+  <a class="brand" href="index.html"><img class="emb" src="img/embleme.png" alt="" width="40" height="43"><span class="nm"><small>La brocante de</small><b>Nadine</b></span></a>
+  <a class="back" href="index.html#boutique">← La boutique</a>
+</nav>
+<main class="wrap" id="main">
+  <p class="crumb"><a href="index.html#boutique">La boutique</a> · <span id="cb-cat">…</span></p>
+  <div id="content"></div>
+</main>
+<section class="similar" id="similar" style="display:none"><div class="wrap">
+  <h2>d'autres <span class="it">pièces uniques.</span></h2>
+  <div class="grid" id="simgrid"></div>
+</div></section>
+<footer class="foot">
+  <a class="brand" href="index.html"><img class="emb" src="img/embleme.png" alt="" width="40" height="43"><span class="nm"><small>La brocante de</small><b>Nadine</b></span></a>
+  <div>Seconde main · fait main · livré partout en France · bonjour@labrocantedenadine.fr</div>
+</footer>
+
+<a class="evw-badge" href="https://flaverw.github.io/everywhere-studio-apercu/" target="_blank" rel="noopener" aria-label="Site propulsé par Everywhere"><span class="evw-dot" aria-hidden="true"></span><span class="evw-txt">propulsé par <b>Everywhere</b></span></a>
+<style>
+.evw-badge{position:fixed;right:14px;bottom:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:7px 13px 7px 11px;border-radius:100px;background:rgba(36,28,20,.86);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(242,233,218,.18);color:#f2e9da;text-decoration:none;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;box-shadow:0 6px 20px rgba(0,0,0,.24);opacity:.72;transition:opacity .25s,transform .25s}
+.evw-badge:hover{opacity:1;transform:translateY(-2px)}.evw-badge .evw-dot{width:8px;height:8px;border-radius:50%;background:#f0532a}
+.evw-badge .evw-txt{white-space:nowrap;text-transform:lowercase}.evw-badge .evw-txt b{font-weight:800}
+@media(max-width:560px){.evw-badge{right:10px;bottom:10px;padding:6px 11px;font-size:10px}}
+</style>
+
+<script src="catalogue.js"></script>
+<script>
+(function(){
+  var P=window.CATALOGUE||[];
+  function qid(){try{return new URLSearchParams(location.search).get('id')}catch(e){return null}}
+  var p=P.filter(function(x){return x.id===qid()})[0];
+  var content=document.getElementById('content');
+  if(!p){ document.getElementById('cb-cat').textContent='pièce introuvable';
+    content.innerHTML='<div style="padding:70px 0;text-align:center"><p style="font-family:var(--serif);font-style:italic;font-size:30px;color:var(--muted)">Cette pièce n\'existe plus… ou est déjà partie.</p><p style="margin-top:20px"><a class="btn" href="index.html#boutique">Voir la boutique</a></p></div>';
+    return;
+  }
+  document.title='La Brocante de Nadine — '+p.nom;
+  document.getElementById('cb-cat').textContent=p.nom;
+  var meta=[p.etat,p.taille,p.matiere].filter(Boolean).map(function(m){return '<span>'+m+'</span>'}).join('');
+  var subj=encodeURIComponent('Réservation — '+p.nom+' ('+p.prix+' €)');
+  var body=encodeURIComponent('Bonjour Nadine,\n\nJe souhaite réserver « '+p.nom+' » ('+p.prix+' €).\nÀ bientôt !');
+  content.innerHTML=
+    '<div class="product">'
+    +'<div class="pgallery">'+(p.faitmain?'<span class="badge">Fait main · Nadine</span>':'<span class="badge">Pièce unique</span>')+'<img src="img/'+p.img+'.jpg" alt="'+p.nom+'"></div>'
+    +'<div class="pinfo">'
+      +'<div class="cat">'+p.catLabel+'</div>'
+      +'<h1>'+p.nom+'</h1>'
+      +'<div class="price">'+p.prix+' €</div>'
+      +'<div class="meta">'+meta+'</div>'
+      +'<p class="desc">'+p.desc+'</p>'
+      +'<div class="buy"><a class="btn" href="mailto:bonjour@labrocantedenadine.fr?subject='+subj+'&body='+body+'">Réserver cette pièce</a>'
+        +'<div class="row"><a class="btn ghost" style="flex:1;justify-content:center" href="index.html#boutique">← Continuer à chiner</a></div></div>'
+      +'<div class="reassure">'
+        +'<div><span class="i">✿</span><span><b>Livré partout en France.</b> Colis préparé à la main et <b>délicatement parfumé</b> — la touche de Nadine.</span></div>'
+        +'<div><span class="i">❦</span><span><b>Pièce unique.</b> Il n\'y en a qu\'une : réservée dès le premier mot.</span></div>'
+        +'<div><span class="i">✎</span><span><b>Commande &amp; paiement en ligne bientôt.</b> En attendant, un message suffit pour la garder.</span></div>'
+      +'</div>'
+      +'<div class="seller"><img src="img/embleme.png" alt=""><div><div class="t">Chinée par Nadine</div><div class="s">Choisie à la main, nettoyée, vérifiée.</div></div></div>'
+    +'</div></div>';
+
+  // pièces similaires (même catégorie)
+  var sim=P.filter(function(x){return x.cat===p.cat && x.id!==p.id}).slice(0,4);
+  if(sim.length){
+    document.getElementById('simgrid').innerHTML=sim.map(function(s){
+      return '<a class="pc" href="piece.html?id='+s.id+'"><div class="im"><img src="img/'+s.img+'.jpg" alt="'+s.nom+'" loading="lazy"></div>'
+        +(s.faitmain?'<span class="fm">Fait main</span>':'')+'<div class="bd"><div class="nm">'+s.nom+'</div><span class="eur">'+s.prix+' €</span></div></a>';
+    }).join('');
+    document.getElementById('similar').style.display='';
+  }
+  window.scrollTo(0,0);
+})();
+</script>
+</body>
+</html>
