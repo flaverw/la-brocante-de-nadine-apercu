@@ -24,6 +24,8 @@
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:340 760;font-display:swap;src:url('fonts/fraunces.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Space Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/spacemono-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Space Mono';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/spacemono-700.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Ephesis';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/ephesis.woff2') format('woff2')}
+@font-face{font-family:'Marcellus';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/marcellus.woff2') format('woff2')}
 
 :root{
   --cream:#f4ede0; --cream2:#ebe0cf; --card:#fbf7ee;
@@ -66,11 +68,12 @@ section{padding:clamp(58px,9vh,120px) 0}
 .dark{background:var(--dark);color:var(--dink)}
 
 /* logo lockup */
-.brand{display:inline-flex;align-items:center;gap:11px}
-.brand .sprig{width:20px;height:26px;color:var(--acc);flex:none}
+.brand{display:inline-flex;align-items:center;gap:12px}
+.brand .emb{width:42px;height:auto;flex:none}
+.dark .brand .emb{filter:brightness(1.12) saturate(1.04)}
 .brand .nm{display:flex;flex-direction:column;line-height:1}
-.brand .nm small{font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink2)}
-.brand .nm b{font-family:var(--disp);font-style:italic;font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.01em}
+.brand .nm small{font-family:'Marcellus',serif;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2)}
+.brand .nm b{font-family:'Ephesis',cursive;font-weight:400;font-size:30px;color:var(--ink);letter-spacing:0;line-height:.82;margin-top:2px}
 .dark .brand .nm small{color:var(--dink2)}.dark .brand .nm b{color:var(--dink)}
 
 /* nav */
@@ -171,7 +174,7 @@ section{padding:clamp(58px,9vh,120px) 0}
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="sprig" viewBox="0 0 40 50"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M20 47 C19 37 19 26 20 15 C20.5 10 21 7 20 4"/><path d="M19 30 L12 27"/><path d="M21 24 L28 20"/><path d="M19.5 18 L14 15"/></g><g fill="currentColor"><circle cx="11" cy="26.5" r="3"/><circle cx="29" cy="19.5" r="3"/><circle cx="13" cy="14.5" r="2.7"/><circle cx="20" cy="4" r="3.2"/></g></symbol></svg>
 
 <nav class="nav" id="nav">
-  <a class="brand" href="#" aria-label="La Brocante de Nadine"><svg class="sprig"><use href="#sprig"/></svg><span class="nm"><small>La brocante de</small><b>Nadine</b></span></a>
+  <a class="brand" href="#" aria-label="La Brocante de Nadine"><img class="emb" src="img/embleme.png" alt="" width="42" height="45"><span class="nm"><small>La brocante de</small><b>Nadine</b></span></a>
   <a class="btn" data-mag href="#reserver">Nous écrire</a>
 </nav>
 
@@ -257,7 +260,7 @@ section{padding:clamp(58px,9vh,120px) 0}
 </main>
 
 <footer class="foot"><div class="in">
-  <a class="brand" href="#"><svg class="sprig"><use href="#sprig"/></svg><span class="nm"><small>La brocante de</small><b>Nadine</b></span></a>
+  <a class="brand" href="#"><img class="emb" src="img/embleme.png" alt="" width="42" height="45"><span class="nm"><small>La brocante de</small><b>Nadine</b></span></a>
   <div class="col"><div>Chiné &amp; choisi avec soin</div><div>Seconde main · fait main · pièces uniques</div><div>bonjour@labrocantedenadine.fr</div></div>
 </div></footer>
 
